@@ -1,0 +1,1172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title>JRL - Dashboard</title>
+		<!-- Vendors Style-->
+		<link rel="stylesheet" href="assets/css/vendors_css.css">
+		<!-- Style-->  
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/skin_color.css">
+  </head>
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+<div class="wrapper">
+	<div id="loader"></div>
+
+  <header class="main-header" style="background: #04447b;">
+		<div class="d-flex align-items-center logo-box justify-content-start" style="background: #04447B;padding-top: 1px;">	
+			
+		</div>  
+    <nav class="navbar navbar-static-top" style="background: white;">
+		  <div class="app-menu">
+				<ul class="header-megamenu nav">
+					<li class="btn-group nav-item">
+						<a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light ms-0" data-toggle="push-menu" role="button">
+					<i data-feather="menu"></i>
+			    </a>
+						<p style="font-size: 1.5rem;padding-top: 10px; font-weight: 600;" >Dashboard</p>
+					</li>
+				</ul> 
+		  </div>
+	      <div class="navbar-custom-menu r-side">
+	        <ul class="nav navbar-nav">
+	        	<li class="btn-group nav-item d-xl-inline-flex d-none">
+			        <a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon me-0">
+						  	<img src="images/iconos/manjaro.png">
+						  </a>
+	          </li>
+	          <li class="btn-group nav-item d-xl-inline-flex d-none notifications-menu">
+			        <a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon me-0">
+						  	<i data-feather="bell"></i>
+						  </a>
+	          </li>
+						<li class="dropdown user user-menu" style="padding-left: 10px;">
+							<a href="#" class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow" >
+								<div class="d-flex pt-1 align-items-center">
+									<div class="text-end me-10">
+										<p class="pt-5 fs-14 mb-0 fw-700">Emili Roque</p>
+										<small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
+									</div>
+									<img src="images/avatar/avatar-13.png" class="avatar rounded-circle bg-primary-light h-40 w-40" alt="" />
+								</div>
+							</a>
+						</li>	
+	        </ul>
+	      </div>
+	    </nav>
+  </header>
+
+  <aside class="main-sidebar" style="background: #04447B;padding-top: 60px; margin-top: 20px;">
+
+  	<div class="d-flex align-items-center logo-box justify-content-start" style="background: #04447B;padding-top: 0px;padding-bottom: 0px;">	
+			<a href="index.html" class="logo">
+			  <div class="logo-lg">
+				  <span class="light-logo"><img src="images/logo/logo.png" alt="logo" style="width: 50px;height: 50px;">
+				  <p style="color: white;font-size: 1.5rem;text-align: left;">Panel Administrativo</p></span>
+			  </div>
+			</a>
+		</div>  
+		<hr style="background: white;:">
+    <section class="sidebar position-relative"> 
+	  	<div class="multinav">
+			  <div class="multinav-scroll" style="height: 97%;">	
+				  <ul class="sidebar-menu" data-widget="tree">	
+						<li class="treeview">
+						  <a href="#"> <i style="color: white" data-feather="grid"></i>
+								<span style="color: white" >Inicio</span>
+								<span class="pull-right-container"> <i style="color: white" class="fa fa-angle-right pull-right"></i> </span>
+						  </a>
+						</li>
+						<li class="treeview">
+						  <a href="#" style="color: white"><i style="color: white" data-feather="shopping-cart"></i>
+								<span style="color: white">Compra</span>
+								<span class="pull-right-container"><i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a href="#" style="color: white"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Guias de Remision</a>
+								</li>												
+								<li class="treeview">
+									<a href="#" style="color: white"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Provedores</a>
+								</li>										
+						  </ul>
+						</li>		
+						<li class="treeview">
+						  <a style="color: white" href="#"><i style="color: white" data-feather="home"></i>
+								<span style="color: white">Almacen</span>
+								<span class="pull-right-container"><i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a href="#" style="color: white"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Categoria</a>
+								</li>												
+								<li class="treeview">
+									<a href="#" style="color: white"> <i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Producto</a>
+								</li>										
+						  </ul>
+						</li>	
+						<li class="treeview">
+						  <a style="color: white" href="#"><i style="color: white" data-feather="package"></i>
+								<span style="color: white">Pedidos</span>
+								<span class="pull-right-container"><i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview" >
+									<a href="#" style="color: white"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Nuevo Pedido</a>
+								</li>												
+								<li class="treeview">
+									<a href="#" style="color: white"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ver Pedidos</a>
+								</li>										
+						  </ul>
+						</li>	
+						<li class="treeview">
+						  <a style="color: white"href="#"><i style="color: white" data-feather="user"></i>
+								<span style="color: white">Clientes</span>
+								<span class="pull-right-container"><i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a style="color: white" href="#"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ver Clientes</a>
+								</li>										
+						  </ul>
+						</li>	
+						<li class="treeview">
+						  <a style="color: white" href="#"><i style="color: white" data-feather="trending-up"></i>
+								<span style="color: white">Ventas</span>
+								<span class="pull-right-container"><i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a href="#" style="color: white"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ver Ventas</a>
+								</li>												
+						  </ul>
+						</li>	
+						<li class="treeview">
+						  <a style="color: white" href="#"> <i style="color: white" data-feather="archive"></i>
+								<span style="color: white">Inventario</span>
+								<span class="pull-right-container"> <i style="color: white" class="fa fa-angle-right pull-right"></i></span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a style="color: white" href="#"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Movimientos</a>
+								</li>												
+								<li class="treeview">
+									<a style="color: white" href="#"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Devoluciónes</a>
+								</li>										
+						  </ul>
+						</li>	
+						<li class="treeview">
+						  <a style="color: white"  href="#"> <i style="color: white" data-feather="users"></i>
+								<span style="color: white">Usuarios</span>
+								<span class="pull-right-container"> <i style="color: white" class="fa fa-angle-right pull-right"></i> </span>
+						  </a>
+						  <ul class="treeview-menu">											
+								<li class="treeview">
+									<a style="color: white" href="#"><i style="color: white" class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ver Usuarios</a>
+								</li>												
+						  </ul>
+						</li>	
+					</ul>
+			  </div>
+			</div>
+    </section>
+  </aside>
+
+  <div class="content-wrapper">
+	  <div class="container-full" style="padding-top: 20px;">
+		<section class="content">
+		  <div class="callout callout-primary-light">
+			<h4>Reminder!</h4>
+			Instructions for how to use modals are available on the
+			<a href="https://getbootstrap.com/docs/5.0/components/modal/" class="text-primary">Bootstrap documentation</a>
+		  </div>
+
+		   <div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="header-title">Bootstrap Modals</h4>
+
+							<p class="text-muted fs-14">
+								A rendered modal with header, body, and set of actions in the footer.
+							</p>
+
+							<ul class="nav nav-tabs nav-bordered mb-3">
+								<li class="nav-item">
+									<a href="#bs-modals-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+										Preview
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#bs-modals-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+										Code
+									</a>
+								</li>
+							</ul> <!-- end nav-->
+							<div class="tab-content">
+								<div class="tab-pane show active" id="bs-modals-preview">
+
+									<!-- Standard modal content -->
+									<div id="standard-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="standard-modalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="standard-modalLabel">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h6>Text in a modal</h6>
+													<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+													<hr>
+													<h6>Overflowing text to show scroll behavior</h6>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!--  Modal content for the Large example -->
+									<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h6>Text in a modal</h6>
+													<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+													<hr>
+													<h6>Overflowing text to show scroll behavior</h6>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Full width modal content -->
+									<div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-full-width">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="fullWidthModalLabel">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h6>Text in a modal</h6>
+													<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+													<hr>
+													<h6>Overflowing text to show scroll behavior</h6>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Long Content Scroll Modal -->
+									<div class="modal fade" id="scrollable-modal" tabindex="-1" role="dialog"
+										aria-labelledby="scrollableModalTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-scrollable" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+														eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+														laoreet rutrum faucibus dolor auctor.</p>
+													<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+														consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->  
+
+									<div class="button-list">
+										<!-- Standard  modal -->
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#standard-modal">Standard Modal</button>
+										<!-- Large modal -->
+										<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">Large Modal</button>
+										<!-- Small modal -->
+										<button  type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bs-example-modal-sm">Small Modal</button>
+										<!-- Full width modal -->
+										<button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#full-width-modal">Full width Modal</button>
+										<!-- Scrollable modal -->
+										<button  type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#scrollable-modal">Scrollable Modal</button>
+									</div>
+
+								</div> <!-- end preview-->
+
+								<div class="tab-pane" id="bs-modals-code">
+									<pre class="mb-0">
+										<span>
+&lt;!-- Standard modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#standard-modal&quot;&gt;Standard Modal&lt;/button&gt;
+&lt;div id=&quot;standard-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;standard-modalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;standard-modalLabel&quot;&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-footer&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Large modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#bs-example-modal-lg&quot;&gt;Large Modal&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;bs-example-modal-lg&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-lg&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;myLargeModalLabel&quot;&gt;Large modal&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Small modal --&gt;
+&lt;button  type=&quot;button&quot; class=&quot;btn btn-success&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#bs-example-modal-sm&quot;&gt;Small Modal&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;bs-example-modal-sm&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;mySmallModalLabel&quot;&gt;Small modal&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Full width modal --&gt;
+&lt;button  type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#full-width-modal&quot;&gt;Full width Modal&lt;/button&gt;
+&lt;div id=&quot;full-width-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;fullWidthModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-full-width&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;fullWidthModalLabel&quot;&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-footer&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Scrollable modal --&gt;
+&lt;button  type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#scrollable-modal&quot;&gt;Scrollable Modal&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;scrollable-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;scrollableModalTitle&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot; role=&quot;document&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h5 class=&quot;modal-title&quot; id=&quot;scrollableModalTitle&quot;&gt;Modal title&lt;/h5&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-footer&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+										</span>
+									</pre> <!-- end highlight-->
+								</div> <!-- end preview code-->
+							</div> <!-- end tab-content-->
+						</div> <!-- end card-body -->
+					</div> <!-- end card-->
+				</div> <!-- end col -->
+
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="header-title">Modal with Pages</h4>
+							<p class="text-muted fs-14">Examples of custom modals.</p>
+
+							<ul class="nav nav-tabs nav-bordered mb-3">
+								<li class="nav-item">
+									<a href="#modal-pages-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+										Preview
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#modal-pages-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+										Code
+									</a>
+								</li>
+							</ul> <!-- end nav-->
+							<div class="tab-content">
+								<div class="tab-pane show active" id="modal-pages-preview">
+									<!-- Signup modal content -->
+									<div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+
+												<div class="modal-body">
+													<div class="text-center mt-2 mb-4">
+														<a href="index.html" class="text-success">
+															<span><img src="../../../images/logo-light-text3.png" alt="" height="30"></span>
+														</a>
+													</div>
+
+													<form class="ps-3 pe-3" action="#">
+
+														<div class="mb-3">
+															<label for="username" class="form-label">Name</label>
+															<input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
+														</div>
+
+														<div class="mb-3">
+															<label for="emailaddress" class="form-label">Email address</label>
+															<input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+														</div>
+
+														<div class="mb-3">
+															<label for="password" class="form-label">Password</label>
+															<input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+														</div>
+
+														<div class="mb-3">
+															<div class="form-check ps-0">
+																<input type="checkbox" class="form-check-input" id="customCheck1">
+																<label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+															</div> 
+														</div>
+
+														<div class="mb-3 text-center">
+															<button class="btn btn-primary" type="submit">Sign Up Free</button>
+														</div>
+
+													</form>
+
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+
+									<!-- SignIn modal content -->
+									<div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<div class="text-center mt-2 mb-4">
+														<a href="index.html" class="text-success">
+															<span><img src="../../../images/logo-light-text3.png" alt="" height="30"></span>
+														</a>
+													</div>
+
+													<form action="#" class="ps-3 pe-3">
+														<div class="mb-3">
+															<label for="emailaddress1" class="form-label">Email address</label>
+															<input class="form-control" type="email" id="emailaddress1" required="" placeholder="john@deo.com">
+														</div>
+
+														<div class="mb-3">
+															<label for="password1" class="form-label">Password</label>
+															<input class="form-control" type="password" required="" id="password1" placeholder="Enter your password">
+														</div>
+
+														<div class="mb-3">
+															<div class="form-check ps-0">
+																<input type="checkbox" class="form-check-input" id="customCheck2">
+																<label class="form-check-label" for="customCheck2">Remember me</label>
+															</div>
+														</div>
+
+														<div class="mb-3 text-center">
+															<button class="btn btn-primary" type="submit">Sign In</button>
+														</div>
+													</form>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<div class="button-list">
+										<!-- Sign Up modal -->
+										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup-modal">Sign Up Modal</button>
+										<!-- Log In modal -->
+										<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#login-modal">Log In Modal</button>
+									</div>                                       
+								</div> <!-- end preview-->
+
+								<div class="tab-pane" id="modal-pages-code">
+									<pre class="mb-0">
+										<span>
+&lt;!-- Signup modal--&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#signup-modal&quot;&gt;Sign Up Modal&lt;/button&gt;
+&lt;div id=&quot;signup-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+
+			&lt;div class=&quot;modal-body&quot;&gt;
+				&lt;div class=&quot;text-center mt-2 mb-4&quot;&gt;
+					&lt;a href=&quot;index.html&quot; class=&quot;text-success&quot;&gt;
+						&lt;span&gt;&lt;img src=&quot;assets/images/logo-dark.png&quot; alt=&quot;&quot; height=&quot;18&quot;&gt;&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+
+				&lt;form class=&quot;ps-3 pe-3&quot; action=&quot;#&quot;&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;label for=&quot;username&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
+						&lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;username&quot; required=&quot;&quot; placeholder=&quot;Michael Zenaty&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;label for=&quot;emailaddress&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;
+						&lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;emailaddress&quot; required=&quot;&quot; placeholder=&quot;john@deo.com&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;label for=&quot;password&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+						&lt;input class=&quot;form-control&quot; type=&quot;password&quot; required=&quot;&quot; id=&quot;password&quot; placeholder=&quot;Enter your password&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;div class=&quot;form-check&quot;&gt;
+							&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck1&quot;&gt;
+							&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck1&quot;&gt;I accept &lt;a href=&quot;#&quot;&gt;Terms and Conditions&lt;/a&gt;&lt;/label&gt;
+						&lt;/div&gt; 
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3 text-center&quot;&gt;
+						&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Sign Up Free&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Login modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#login-modal&quot;&gt;Log In Modal&lt;/button&gt;
+&lt;div id=&quot;login-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				&lt;div class=&quot;text-center mt-2 mb-4&quot;&gt;
+					&lt;a href=&quot;index.html&quot; class=&quot;text-success&quot;&gt;
+						&lt;span&gt;&lt;img src=&quot;assets/images/logo-dark.png&quot; alt=&quot;&quot; height=&quot;18&quot;&gt;&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+
+				&lt;form action=&quot;#&quot; class=&quot;ps-3 pe-3&quot;&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;label for=&quot;emailaddress1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;
+						&lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;emailaddress1&quot; required=&quot;&quot; placeholder=&quot;john@deo.com&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;label for=&quot;password1&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+						&lt;input class=&quot;form-control&quot; type=&quot;password&quot; required=&quot;&quot; id=&quot;password1&quot; placeholder=&quot;Enter your password&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3&quot;&gt;
+						&lt;div class=&quot;form-check&quot;&gt;
+							&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck2&quot;&gt;
+							&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck2&quot;&gt;Remember me&lt;/label&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;mb-3 text-center&quot;&gt;
+						&lt;button class=&quot;btn rounded-pill btn-primary&quot; type=&quot;submit&quot;&gt;Sign In&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+										</span>
+									</pre> <!-- end highlight-->
+								</div> <!-- end preview code-->
+							</div> <!-- end tab-content-->
+						</div> <!-- end card-body -->
+					</div> <!-- end card-->
+				</div> <!-- end col -->
+			</div>
+			<!-- end row -->
+
+
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="header-title">Modal based Alerts</h4>
+							<p class="text-muted fs-14">Show different contexual alert messages using modal component</p>
+
+							<ul class="nav nav-tabs nav-bordered mb-3">
+								<li class="nav-item">
+									<a href="#modal-alerts-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+										Preview
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#modal-alerts-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+										Code
+									</a>
+								</li>
+							</ul> <!-- end nav-->
+							<div class="tab-content">
+								<div class="tab-pane show active" id="modal-alerts-preview">
+									<!-- Success Alert Modal -->
+									<div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content modal-filled bg-success">
+												<div class="modal-body p-4">
+													<div class="text-center text-white">
+														<i class="fa fa-check fs-36"></i>
+														<h4 class="mt-2">Well Done!</h4>
+														<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+														<button type="button" class="btn btn-success-light my-2" data-bs-dismiss="modal">Continue</button>
+													</div>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Info Alert Modal -->
+									<div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-body p-4">
+													<div class="text-center">
+														<i class="fa fa-info-circle text-info fs-36"></i>
+														<h4 class="mt-2">Heads up!</h4>
+														<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+														<button type="button" class="btn btn-info-light my-2" data-bs-dismiss="modal">Continue</button>
+													</div>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Warning Alert Modal -->
+									<div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-body p-4">
+													<div class="text-center">
+														<i class="fa fa-warning text-warning fs-36"></i>
+														<h4 class="mt-2">Incorrect Information</h4>
+														<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+														<button type="button" class="btn btn-warning-light my-2" data-bs-dismiss="modal">Continue</button>
+													</div>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Danger Alert Modal -->
+									<div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content modal-filled bg-danger">
+												<div class="modal-body p-4">
+													<div class="text-center text-white">
+														<i class="fa fa-times-circle-o fs-36"></i>
+														<h4 class="mt-2">Oh snap!</h4>
+														<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+														<button type="button" class="btn btn-danger-light my-2" data-bs-dismiss="modal">Continue</button>
+													</div>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<div class="button-list">
+										<!-- Success Alert modal -->
+										<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success-alert-modal">Success Alert</button>
+										<!-- Info Alert modal -->
+										<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#info-alert-modal">Info Alert</button>
+										<!-- Warning Alert modal -->
+										<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warning-alert-modal">Warning Alert</button>
+										<!-- Danger Alert modal -->
+										<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-alert-modal">Danger Alert</button>
+									</div>
+
+								</div> <!-- end preview-->
+
+								<div class="tab-pane" id="modal-alerts-code">
+									<pre class="mb-0">
+										<span>
+&lt;!-- Success Alert Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#success-alert-modal&quot;&gt;Success Alert&lt;/button&gt;
+&lt;div id=&quot;success-alert-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+		&lt;div class=&quot;modal-content modal-filled bg-success&quot;&gt;
+			&lt;div class=&quot;modal-body p-4&quot;&gt;
+				&lt;div class=&quot;text-center&quot;&gt;
+					&lt;i class=&quot;dripicons-checkmark h1&quot;&gt;&lt;/i&gt;
+					&lt;h4 class=&quot;mt-2&quot;&gt;Well Done!&lt;/h4&gt;
+					&lt;p class=&quot;mt-3&quot;&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+					&lt;button type=&quot;button&quot; class=&quot;btn btn-light my-2&quot; data-bs-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Info Alert Modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#info-alert-modal&quot;&gt;Info Alert&lt;/button&gt;
+&lt;div id=&quot;info-alert-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-body p-4&quot;&gt;
+				&lt;div class=&quot;text-center&quot;&gt;
+					&lt;i class=&quot;dripicons-information h1 text-info&quot;&gt;&lt;/i&gt;
+					&lt;h4 class=&quot;mt-2&quot;&gt;Heads up!&lt;/h4&gt;
+					&lt;p class=&quot;mt-3&quot;&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+					&lt;button type=&quot;button&quot; class=&quot;btn btn-info my-2&quot; data-bs-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Warning Alert Modal --&gt;
+&lt;button  type=&quot;button&quot; class=&quot;btn btn-warning&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#warning-alert-modal&quot;&gt;Warning Alert&lt;/button&gt;
+&lt;div id=&quot;warning-alert-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-body p-4&quot;&gt;
+				&lt;div class=&quot;text-center&quot;&gt;
+					&lt;i class=&quot;dripicons-warning h1 text-warning&quot;&gt;&lt;/i&gt;
+					&lt;h4 class=&quot;mt-2&quot;&gt;Incorrect Information&lt;/h4&gt;
+					&lt;p class=&quot;mt-3&quot;&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+					&lt;button type=&quot;button&quot; class=&quot;btn btn-warning my-2&quot; data-bs-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Danger Alert Modal --&gt;
+&lt;button  type=&quot;button&quot; class=&quot;btn btn-danger&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#danger-alert-modal&quot;&gt;Danger Alert&lt;/button&gt;
+&lt;div id=&quot;danger-alert-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;
+		&lt;div class=&quot;modal-content modal-filled bg-danger&quot;&gt;
+			&lt;div class=&quot;modal-body p-4&quot;&gt;
+				&lt;div class=&quot;text-center&quot;&gt;
+					&lt;i class=&quot;dripicons-wrong h1&quot;&gt;&lt;/i&gt;
+					&lt;h4 class=&quot;mt-2&quot;&gt;Oh snap!&lt;/h4&gt;
+					&lt;p class=&quot;mt-3&quot;&gt;Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+					&lt;button type=&quot;button&quot; class=&quot;btn btn-light my-2&quot; data-bs-dismiss=&quot;modal&quot;&gt;Continue&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+										</span>
+									</pre> <!-- end highlight-->
+								</div> <!-- end preview code-->
+							</div> <!-- end tab-content-->
+						</div> <!-- end card-body -->
+					</div> <!-- end card-->
+				</div> <!-- end col -->
+
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="header-title">Modal Position</h4>
+							<p class="text-muted fs-14">Specify the position for the modal. You can display modal at top, bottom, center or right of page by specifying classes <code>modal-top</code>, <code>modal-bottom</code>, <code>modal-dialog-centered</code> and <code>modal-right</code> respectively.</p>
+
+							<ul class="nav nav-tabs nav-bordered mb-3">
+								<li class="nav-item">
+									<a href="#modal-position-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+										Preview
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#modal-position-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+										Code
+									</a>
+								</li>
+							</ul> <!-- end nav-->
+							<div class="tab-content">
+								<div class="tab-pane show active" id="modal-position-preview">
+									<!-- Top modal content -->
+									<div id="top-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-top">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="topModalLabel">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h5>Text in a modal</h5>
+													<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Right modal content -->
+									<div id="right-modal" class="modal modal-right fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<div>
+														<h4 class="mt-0">Text in a modal</h4>
+														<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+													</div>
+												</div>
+												 <div class="modal-footer modal-footer-uniform">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												  </div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Bottom modal content -->
+									<div id="bottom-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-sm modal-bottom">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="bottomModalLabel">Modal Heading</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h5>Text in a modal</h5>
+													<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<!-- Center modal content -->
+									<div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" id="myCenterModalLabel">Center modal</h4>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<h5>Overflowing text to show scroll behavior</h5>
+													<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+													<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+
+									<div class="button-list">
+										<!-- Top modal -->
+										<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#top-modal">Top Modal</button>
+										<!-- Bottom modal -->
+										<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bottom-modal">Bottom Modal</button>
+										<!-- Center modal -->
+										<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#centermodal">Center modal</button>
+										<!-- Right modal -->
+										<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#right-modal">Rightbar Modal</button>
+									</div>
+
+								</div> <!-- end preview-->
+
+								<div class="tab-pane" id="modal-position-code">
+									<pre class="mb-0">
+										<span>
+&lt;!-- Top modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#top-modal&quot;&gt;Top Modal&lt;/button&gt;
+&lt;div id=&quot;top-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-top&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;topModalLabel&quot;&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-footer&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Right modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#right-modal&quot;&gt;Rightbar Modal&lt;/button&gt;
+&lt;div id=&quot;right-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm modal-right&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header border-0&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				&lt;div class=&quot;text-center&quot;&gt;
+					...
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Bottom modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#bottom-modal&quot;&gt;Bottom Modal&lt;/button&gt;
+&lt;div id=&quot;bottom-modal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-sm modal-bottom&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;bottomModalLabel&quot;&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-footer&quot;&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;!-- Center modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#centermodal&quot;&gt;Center modal&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;centermodal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
+		&lt;div class=&quot;modal-content&quot;&gt;
+			&lt;div class=&quot;modal-header&quot;&gt;
+				&lt;h4 class=&quot;modal-title&quot; id=&quot;myCenterModalLabel&quot;&gt;Center modal&lt;/h4&gt;
+				&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+										</span>
+									</pre> <!-- end highlight-->
+								</div> <!-- end preview code-->
+							</div> <!-- end tab-content-->
+						</div> <!-- end card-body -->
+					</div> <!-- end card-->
+				</div> <!-- end col -->
+			</div>
+			<!-- end row -->
+			
+		</section>
+	  </div>
+  </div>
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+      <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end"></ul>
+    </div>
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.multipurposethemes.com/">JRL</a>. Todos los derechos reservados.
+  </footer> 
+  <div class="control-sidebar-bg"></div>	
+</div>	
+			
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-sm btn-warning l-h-50">
+        <div id="chat-overlay"></div>
+        <span class="icon-Group-chat fs-18"><span class="path1"></span><span class="path2"></span></span>
+		</div>
+
+		<div class="chat-box">
+      <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button class="waves-effect waves-circle btn btn-circle btn-primary-light h-40 w-40 rounded-circle l-h-50" type="button" data-bs-toggle="dropdown">
+              <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+          </button>
+          <div class="dropdown-menu min-w-200">
+						<a class="dropdown-item fs-16" href="#"><span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span> Help</a>
+						<a class="dropdown-item fs-16" href="#"><span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span>Privacy</a>
+          </div>
+        </div>
+        <div class="text-center flex-grow-1">
+          <div class="text-dark fs-18">Asistente Virtual</div>
+           
+        </div>
+        <div class="chat-box-toggle">
+          <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-50" type="button">
+            <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+          </button>                    
+        </div>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay"></div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="images/avatar/3.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+      </div>
+      <div class="chat-input">      
+        <form>
+          <input type="text" id="chat-input" placeholder="Send a message..."/>
+            <button type="submit" class="chat-submit" id="chat-submit"><span class="icon-Send fs-22"></span></button>
+        </form>      
+      </div>
+		</div>
+	</div>
+	
+	<script src="assets/js/vendors.min.js"></script>
+	<script src="assets/js/pages/chat-popup.js"></script>
+    <script src="assets/icons/feather-icons/feather.min.js"></script>
+	
+	<script src="assets/js/demo.js"></script>
+	<script src="assets/js/template.js"></script>
+	
+</body>
+</html>
